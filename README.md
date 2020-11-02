@@ -1,2 +1,2 @@
-# leaks_dot_see_pee_pee
+# leaks dot see pee pee
 70 million leaks in parallel in C++
