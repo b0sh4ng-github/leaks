@@ -1,3 +1,10 @@
+//
+//  main.cpp
+//  leaks
+//
+//  Created by Bo Shang on 11/2/20.
+//
+
 #include <cstdio>
 #include <iostream>
 #include <condition_variable>
@@ -21,6 +28,8 @@ void waits()
 
 class Penis {
   public:
+    unsigned int penis_number;
+    std::string penis;
     Penis() = default;
     Penis(unsigned int pNum){
         this->penis_number = pNum;
@@ -36,15 +45,6 @@ class Penis {
         this->penis_number = pNum;
         this->penis = p;
     }
-    Penis(const Penis &copyPenis){
-        this->penis_number = 
-copyPenis.getPenisNumber();
-        this->penis = copyPenis.getPenis()
-    }
-    Penis &operator = (const Penis &copyPenis)
-    void setPenisNumber(unsigned int pNum){
-        this->penis_number = pNum;
-    }
     unsigned int getPenisNumber(){
         return this->penis_number;
     }
@@ -59,9 +59,6 @@ copyPenis.getPenisNumber();
     }
 
   private:
-    unsigned int penis_number;
-    std::string penis;
-    // unsigned short peepeeLength; // = rand() % 4091 + 5;
     void piss(){
         std::vector<char> draw_penis(penis.begin(), penis.end());
         std::vector<char> draw;
